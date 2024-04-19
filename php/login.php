@@ -1,4 +1,4 @@
-<?php
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-
+<?php
 $login = filter_input(INPUT_POST, "login", FILTER_VALIDATE_EMAIL);
 $senha = $_POST["senha"];
 
@@ -23,11 +23,12 @@ if ($login && strlen($senha) == 8) {
     header("Location: ./../index.html");
     exit;
 }
-
+?>
     
 </body>
 </html>
-html
+<?php
+
 // var_dump($_GET);
 
 //sanitize
